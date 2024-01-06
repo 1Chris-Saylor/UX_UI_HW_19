@@ -1,0 +1,137 @@
+/* Navbar styles */
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Logo styles */
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+/* Navigation styles */
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+nav ul {
+    width: 50%;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero image styles */
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+
+.heroImg .content {
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #373738;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+
+
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 60, 60);
+    font-family: 'Times New Roman', Times, serif; /* Caslon is not a web-safe font, so using a similar serif font */
+}
+
+/* Rest of your CSS rules here */
+
+
+
+/* Existing CSS code */
+
+/* My Work Section Constructed using CSS Grid */
+.myWork {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-template-rows: repeat(3, auto); /* Adjust the number of rows and row height as needed */
+    gap: 20px; /* Add gap between grid items */
+}
+
+.grid-item {
+    grid-area: auto; /* Change grid area to auto, allowing the items to be placed in the next available area */
+}
+
+/* New styles for additional boxes */
+/* ... (other styles) ... */
+
+/* Add the new flex container styles */
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    width: 33%;
+    margin: 0 10px; /* Adjust margin for spacing */
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    /* Update flex direction for mobile views */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Adjust width of flex children to take up 100% width */
+    .flex-container > div {
+        width: 100%;
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    /* Adjust grid-template-areas, grid-template-rows, and grid-template-columns for mobile views */
+    .myWork {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto; /* Adjust as needed */
+        grid-template-areas: "myArea"; /* Adjust as needed */
+    }
+}
+
+

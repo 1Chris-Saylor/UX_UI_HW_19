@@ -1,0 +1,193 @@
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif; /* Change font to serif */
+}
+
+/* ... (copy all other styles) ... */
+
+.view-all {
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+
+section {
+    background-color: #555; /* Darker grey background for sections */
+    padding: 20px; /* Add padding around each section */
+    margin: 0 auto 20px; /* Center the content and add margin at the bottom */
+    text-align: center; /* Center the content */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    max-width: 600px; /* Set maximum width for better readability */
+}
+
+h1 {
+    color: #fff; /* Text color for headings */
+}
+
+div {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Add margin between rows */
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+img {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 10px; /* Add margin below images */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+h4, p, button {
+    margin: 0; /* Remove default margins */
+}
+
+button {
+    background-color: #f00; /* Red button background color */
+    color: #fff; /* Text color for the button */
+    padding: 8px 12px; /* Add padding to the button */
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Add margin above buttons */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Added style for the "View All Work" heading */
+.view-all {
+    text-align: center;
+    border: none; /* Remove border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+
+
+/* My Work Section Constructed using CSS Grid Chris Saylor AGHHHHHH!!!! */
+
+
+/* Create a grid container for the "My Work" section */
+.myWork {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-template-rows: repeat(3, auto); /* Adjust the number of rows and row height as needed */
+    gap: 50px; /* Add gap between grid items */
+}
+
+/* Optionally, adjust grid-template-areas as needed to match your design */
+.grid-item {
+    grid-area: auto; /* Change grid area to auto, allowing the items to be placed in the next available area */
+}
+
+
+
+/* Existing CSS code */
+
+body {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif; /* Change font to serif */
+}
+
+/* ... (copy all other styles) ... */
+
+.view-all {
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section {
+    background-color: #555;
+    padding: 20px;
+    margin: 0 auto 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    max-width: 600px;
+}
+
+h1 {
+    color: #fff;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+h4, p, button {
+    margin: 0;
+}
+
+button {
+    background-color: #f00;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.view-all {
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* My Work Section Constructed using CSS Grid */
+/* Step 5: Code the CSS Style for the “My Work” Section Using CSS Grid (4-6 hours) */
+
+.myWork {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.grid-item {
+    grid-area: auto;
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for mobile views */
+    .myWork {
+        grid-gap: 20px; /* Adjust gap for smaller screens */
+    }
+
+    .grid-item {
+        grid-area: auto;
+    }
+}
+
+

@@ -1,0 +1,183 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(81, 81, 81); /* Use any shade of grey you prefer */
+}
+
+.my-ux-skills {
+    position: relative;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px; /* Optional: Add padding to make the border visible */
+    text-align: center; /* Center the text within the section */
+    margin: 10px; /* Add margin for spacing */
+}
+
+/* Additional styling for better visibility */
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid rgb(0, 0, 255); /* Add a border for the skills container */
+    padding: 10px; /* Optional: Add padding to make the border visible */
+}
+
+.line-to-skill-container {
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 50%; /* Position in the middle of the container */
+    border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+    height: 100%; /* Adjust the height of the line to cover the entire container */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+.skill {
+    border: 1px solid rgb(0, 255, 0);
+    padding: 10px; /* Optional: Add padding to make the border visible */
+    margin: 10px; /* Optional: Add margin for spacing */
+    position: relative;
+}
+
+.line-to-skill {
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 50%; /* Position in the middle of the container */
+    border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+    height: 100%; /* Adjust the height of the line to cover the entire container */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+/* New styles for additional boxes */
+.skill img {
+    border: 1px solid rgb(255, 255, 0); /* Add a border around the image */
+    width: 200px; /* Set a specific width for the image */
+    height: 150px; /* Set a specific height for the image */
+    position: relative;
+}
+
+.line-to-img {
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 50%; /* Position in the middle of the container */
+    border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+    height: 100%; /* Adjust the height of the line to cover the entire container */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+.skill h3 {
+    border: 1px solid rgb(0, 255, 255); /* Add a border around the heading "User Research" */
+    padding: 5px; /* Optional: Add padding to make the border visible */
+    position: relative;
+}
+
+.line-to-h3 {
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 50%; /* Position in the middle of the container */
+    border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+    height: 100%; /* Adjust the height of the line to cover the entire container */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+.skill p {
+    border: 1px solid rgb(255, 0, 255); /* Add a border around the paragraph */
+    padding: 5px; /* Optional: Add padding to make the border visible */
+    position: relative;
+}
+
+.line-to-p {
+    position: absolute;
+    top: 0; /* Position at the top of the container */
+    left: 50%; /* Position in the middle of the container */
+    border-left: 1px solid yellow; /* Vertical line with 1px width and yellow color */
+    height: 100%; /* Adjust the height of the line to cover the entire container */
+    transform: translateX(-50%); /* Center the line horizontally */
+}
+
+/* Colored Vertical Lines with Text */
+.vertical-line {
+    position: absolute;
+    width: 1px;
+    height: 50vh; /* Adjust the height of the lines */
+}
+
+.line1 { left: 50px; background-color: rgb(0, 255, 0); top: 100px; }
+.line2 { left: 150px; background-color: rgb(255, 255, 0); top: 200px; }
+.line3 { left: 250px; background-color: rgb(0, 255, 255); top: 300px; }
+.line4 { left: 350px; background-color: rgb(255, 0, 255); top: 400px; }
+.line5 { left: 450px; background-color: rgba(255, 255, 255, 0); top: -615px; }
+.line6 { left: 550px; background-color: rgb(0, 0, 255); top: 530px; }
+
+.line-text {
+    position: absolute;
+    bottom: 0;
+    font-size: 12px; /* Adjust the font size as needed */
+    color: white; /* Text color */
+    padding: 2px;
+    text-align: center;
+    width: 60px; /* Adjust the width of the text container */
+}
+
+/* Add the new flex container styles */
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    width: 33%;
+    margin: 0 10px; /* Adjust margin for spacing */
+}
+
+
+
+
+
+
+
+/* Existing CSS code */
+
+/* My Work Section Constructed using CSS Grid */
+.myWork {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Adjust the number of columns as needed */
+    grid-template-rows: repeat(3, auto); /* Adjust the number of rows and row height as needed */
+    gap: 20px; /* Add gap between grid items */
+}
+
+.grid-item {
+    grid-area: auto; /* Change grid area to auto, allowing the items to be placed in the next available area */
+}
+
+/* New styles for additional boxes */
+/* ... (other styles) ... */
+
+/* Add the new flex container styles */
+.flex-container {
+    display: flex;
+}
+
+.flex-container > div {
+    width: 33%;
+    margin: 0 10px; /* Adjust margin for spacing */
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+    /* Update flex direction for mobile views */
+    .flex-container {
+        flex-direction: column;
+    }
+
+    /* Adjust width of flex children to take up 100% width */
+    .flex-container > div {
+        width: 100%;
+        margin: 10px 0; /* Adjust margin for spacing */
+    }
+
+    /* Adjust grid-template-areas, grid-template-rows, and grid-template-columns for mobile views */
+    .myWork {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto; /* Adjust as needed */
+        grid-template-areas: "myArea"; /* Adjust as needed */
+    }
+}
